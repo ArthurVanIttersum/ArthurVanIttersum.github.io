@@ -2,12 +2,21 @@
 Portfolio Arthur van Ittersum
 
 Game Jam clicker game
+
+<a href="https://maxscorpionz.itch.io/churnandearn">Clickable Text</a>
+
 Gamejam parcour game
 
+<a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Clickable Text</a>
+
 group project cooking game
+
+<a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Clickable Text</a>
+
 group project tower defense game
 
-C++ project break the matrix
+<a href="https://chickennuggis.itch.io/last-stand-of-zalakhar">Clickable Text</a>
 
+C++ project break the matrix
 
 ![Image](https://github.com/user-attachments/assets/3dc6c67d-757e-4e42-b0b3-16200d6d2115)
