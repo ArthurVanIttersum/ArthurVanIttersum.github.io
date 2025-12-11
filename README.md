@@ -21,7 +21,7 @@ group project tower defense game
 
 C++ project break the matrix
 
-https://github.com/users/ArthurVanIttersum/projects/10
+For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. i made a game inspired by breakout, but with weird shapes instead of blocks.
 
 ![Image](https://github.com/user-attachments/assets/3dc6c67d-757e-4e42-b0b3-16200d6d2115)
 
