@@ -15,7 +15,7 @@ group project cooking game
 
 group project tower defense game
 
-<a href="https://chickennuggis.itch.io/last-stand-of-zalakhar">Defense Of Zalakar</a>
+<a href="https://chickennuggis.itch.io/last-stand-of-zalakhar">Last Stand of Zalakhar</a>
 
 C++ project break the matrix
 
