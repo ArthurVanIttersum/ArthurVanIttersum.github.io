@@ -8,7 +8,7 @@ Display
 In the tutorial I learned how to make a tile map to display sprites on a grid. I made a tile set in paint with tiles of 64x64 pixels, divided by a one pixel line. in code I store a pointer to the location of the file in memory, then use math to copy the correct pixel to the screen buffer. By doing this for every cell in the grid I can draw the blocks onto the screen. I can then store tile data in an array, to keep track of what tile should go where.
 I also wanted to support different colors of each tile, so I could make the levels pretty. To avoid making the tilemap huge I dicided to make every tile black or white, so I can test if a pixel should be colored or not. If it should be colored I get the color code from an array and store the index in the tile data array. This way I can assign a color to each tile using a color palette. 
 
-![Screenshot of Tilemap](Assets/Tilemap.png)
+![Screenshot of Tilemap](../Assets/Tilemap.png)
 
 
 Paddle and ball
