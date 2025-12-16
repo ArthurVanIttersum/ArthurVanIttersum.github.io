@@ -2,8 +2,8 @@
 This is a version of my portfolio tailored to PlayerUnknownProductions. These are the projects on my portfolio that are relevant to the hiring team of PlayerUnknownProductions.
 
 # Dungeon Generator
-
-
+[Read the full devlog →](../Projects/DungeonGenerator1.md)
+[Read the full devlog →](../Projects/DungeonGenerator2.md)
 
 # Escape the matrix project
 
