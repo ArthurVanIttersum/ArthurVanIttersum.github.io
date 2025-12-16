@@ -8,6 +8,9 @@ Display
 In the tutorial I learned how to make a tile map to display sprites on a grid. I made a tile set in paint with tiles of 64x64 pixels, divided by a one pixel line. in code I store a pointer to the location of the file in memory, then use math to copy the correct pixel to the screen buffer. By doing this for every cell in the grid I can draw the blocks onto the screen. I can then store tile data in an array, to keep track of what tile should go where.
 I also wanted to support different colors of each tile, so I could make the levels pretty. To avoid making the tilemap huge I dicided to make every tile black or white, so I can test if a pixel should be colored or not. If it should be colored I get the color code from an array and store the index in the tile data array. This way I can assign a color to each tile using a color palette. 
 
+![Screenshot of Tilemap](Assets/Tilemap.png)
+
+
 Paddle and ball
 Next I added a ball to the game. I store it’s position using an x and y coordinate. I also keep the momentum as an x and y variable. I added a paddle to the game that follows the mouses horizontal position. The balls follows the paddles position until the player uses left click, when the ball gets vertical momentum. Every frame the ball makes it’s pixels black to match the backgroundcolor, moves to the next location and fills the pixels in it’s new locations with white. The shape of the ball is stored in an array, so I can later use these coordinates for collision. The coordinates are stored as a number of pixels offset from the center of the ball. To draw the ball on the screen I loop through all coordinates and add the position of the ball to calculate the correct position. 
 
