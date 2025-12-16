@@ -5,7 +5,7 @@ Dungeon Generator
 
 Escape the matrix project
 
-[Read the full devlog →](../Projects/EscapeTheMatrix.md)
+[Read the full devlog →](../Projects/BreakTheMatrix.md)
 
 Project 2
 
