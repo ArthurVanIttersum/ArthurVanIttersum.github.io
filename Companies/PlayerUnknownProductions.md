@@ -30,7 +30,7 @@ with a group of 4(2 angineers and 2 artists) people in 48 hours. It's a cookie c
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/830c4ef4-ec3b-460e-857d-79dcb6a8930c" />
 
-<a href="https://maxscorpionz.itch.io/churnandearn">Churn and earn</a>
+[Link to itch.io page →](https://maxscorpionz.itch.io/churnandearn)
 
 Gamejam parcour game
 
