@@ -1,6 +1,10 @@
 # ArthurVanIttersum.github.io
 Portfolio Arthur van Ittersum
 
+group project cooking game
+
+<a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Cat media and Gourmet technologies</a>
+
 Game Jam Churn and earn
 This is a game i worked on in a group project of 4 people in 48 hours. It's a cookie clicker style game, with buying and selling products. For this project we had 2 engineers and 2 artists. We colaborated on the concept and me and the other engineer did desing on the side. For this project took the lead in designing the UI and set it up in the engine. i also implemented basic coin and resource counters and resource production, aswell as a level up system. I did playtesting, balance testing and fine tuning.
 
@@ -13,10 +17,6 @@ For this project i also did playtesting, balance testing and fine tuning. While 
 Gamejam parcour game
 
 <a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Rise and fall</a>
-
-group project cooking game
-
-<a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Cat media and Gourmet technologies</a>
 
 group project tower defense game
 
