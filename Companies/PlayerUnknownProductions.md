@@ -12,7 +12,7 @@ For the intake project at buas I needed to make a game using a template buas mad
 # Cat Media and Gourmet Technologies
 This Is the best game i colaborated on. It's a cooking game where you add ingredients to the dish using a match-3 puzzle mechanic. by swiping you can swap ingredients in a grid to make a line of 3 of the same ingredient. This adds the ingredient to the dish. Keep matching untill the dish is complete. if you accedentally match the wrong ingredient the dish will disapoint the customer, which lowers youor score. if you max out your score you win the game. As a team we have received a lot of positive feedback. I made the swiping detection and 3 in a row detection and resolution.
 
-[Read the full devlog →](Projects/CatMediaAndGourmetTechnologies.md)
+[Read the full devlog →](../Projects/CatMediaAndGourmetTechnologies.md)
 
 # Art project 2
 
