@@ -6,7 +6,7 @@ This is a version of my portfolio tailored to PlayerUnknownProductions. These ar
 
 [Read the full devlog →](../Projects/DungeonGenerator2.md)
 
-# Escape the matrix project
+# C++ project Escape the matrix
 
 For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. i made a game inspired by breakout, but with weird shapes instead of blocks.
 
