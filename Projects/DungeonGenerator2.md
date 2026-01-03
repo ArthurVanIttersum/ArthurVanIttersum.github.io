@@ -1,6 +1,7 @@
 # Dungeon generator using Delauney triangulation and Voronoi
 This is a project i did durring the summer holiday. I made a dungeon generator that creates rooms with non-rectangular shapes.
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2Mesh.png)
+
 This is part of a larger project to make a COD-zombies style game using procedural generation. Since i was doing this project mostly for fun i decided to use AI to write most of my code, but i made sure to understand what each part of the code does. In this project i combined a lot of smaller algorithms to make one larger algorithm that generates the dungeon following certain rules. I started by picking a bunch of random points. i then connected these points to make a graph. the idea was that to then run a pathfinding algorithm on that graph, to test if it fulfills the given criteria. each node will represent a room and each edge between two nodes represents a door that connects the rooms. The weights of the edges represents the cost to open the door. these weights are randomly generated out of an array of round numbers before the graph is tested.
 
 If the test returns true the graph is used to generate the dungeon. If the test returns false, the waits of the graph are regenerated and the graph is tested agian. If after 50 tries no solution has been found the structure of the graph is asumed to be bad, and a new graph is generated from scratch.
