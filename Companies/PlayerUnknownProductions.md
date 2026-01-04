@@ -2,13 +2,19 @@
 This is a version of my portfolio tailored to PlayerUnknownProductions. These are the projects on my portfolio that are relevant to the hiring team of PlayerUnknownProductions.
 
 # Dungeon Generator
+Procudural generation. School project.
+
 [Read the full devlog →](../Projects/DungeonGenerator1.md)
+
+Procedural Generation using delauney triangulation, voronoi, pathfinding and mesh generation. Passion project using AI.
+
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2Mesh.png)
 
 [Read the full devlog →](../Projects/DungeonGenerator2.md)
 
 # C++ project Escape the matrix
 
-For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. i made a game inspired by breakout, but with weird shapes instead of blocks.
+For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. I made a game inspired by breakout, but with weird shapes instead of blocks.
 
 [Read the full devlog →](../Projects/BreakTheMatrix.md)
 
