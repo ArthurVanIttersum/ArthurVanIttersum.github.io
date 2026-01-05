@@ -10,9 +10,10 @@ I also wanted to support different colors of each tile, so I could make the leve
 
 ![Screenshot of Tilemap](../Assets/BreakTheMatrixTilemap.png)
 
-
 Paddle and ball
 Next I added a ball to the game. I store it’s position using an x and y coordinate. I also keep the momentum as an x and y variable. I added a paddle to the game that follows the mouses horizontal position. The balls follows the paddles position until the player uses left click, when the ball gets vertical momentum. Every frame the ball makes it’s pixels black to match the backgroundcolor, moves to the next location and fills the pixels in it’s new locations with white. The shape of the ball is stored in an array, so I can later use these coordinates for collision. The coordinates are stored as a number of pixels offset from the center of the ball. To draw the ball on the screen I loop through all coordinates and add the position of the ball to calculate the correct position. 
+
+![Screenshot of Tilemap](../Assets/BreakTheMatrixPaddleAndBall.png)
 
 I then added borders around the screen, so the ball can bounce against them. When the new position of the ball is off the screen I invert the horizontal or vertical momentum and recalculate the new position of the ball. When the ball lands on the paddle I want the ball to bounce based on where on the paddle the ball landed. I did this by comparing the position of the ball with the position of the paddle. The difference between the two is either positive or negative. I set the horizontal momentum to inverse of the difference and the vertical to 1 for up. I then normalize the vector by dividing the components of the vector by the length of the vector. This way the ball always has a constant speed, just the direction changes. This makes the game much easier to balance, as the speed is constant. This also makes the game more interesting, as the direction the ball travels changes the speed at which the player must react.
 
