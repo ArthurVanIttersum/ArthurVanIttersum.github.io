@@ -25,3 +25,7 @@ To detect collision between the ball and the shapes I used the array of coordina
 ![Screenshot of Tilemap](../Assets/BreakTheMatrixBoxes.png)
 
 The bounce function uses a formula I found online: .This formula uses the shapeAngleToBounce vector and the momentum of the ball to calculate how the ball will bounce off. The function first calculates the dot product then slots that in the formula. To make sure that the code doesn’t bounce horizontally forever I added a test condition. If the ball’s horizontal or vertical speed is less then 0.05f the speed is set to 0.05f. This way the ball can never get stuck.
+
+![Screenshot of Tilemap](../Assets/BreakTheMatrixStart.png)
+
+![Screenshot of Tilemap](../Assets/BreakTheMatrixWin.png)
