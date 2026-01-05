@@ -18,6 +18,8 @@ Procedural Generation using delauney triangulation, voronoi, pathfinding and mes
 
 For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. I made a game inspired by breakout, but with weird shapes instead of blocks.
 
+![Screenshot of Tilemap](../Assets/BreakTheMatrixVisual.png)
+
 [Read the full devlog →](../Projects/BreakTheMatrix.md)
 
 # Cat Media and Gourmet Technologies
