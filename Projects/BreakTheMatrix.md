@@ -2,11 +2,13 @@
 
 Intake project For BUAS using C++ with a barebones game engine provided by BUAS. I spent two weeks on the game full time. The template has a game loop and a screen buffer that I can access using code. Before starting the project I followed a tutorial provided by Buas to learn how to use the template to make games. When I got far enough into the tutorial I started designing the game. The theme that was given was bounce. I decided to make a game inspired by the 1973 Atari game breakout. I wanted to make an auto-battler where the player chooses what shapes to add to the game. The shapes make the game harder, as the movement of the ball is harder to predict. Given the low impact of the decision and the limited time I decided to scrap the auto-battler element and instead design a set of levels using different shapes.
 
+![Screenshot of Tilemap](../Assets/BreakTheMatrixVisual.png)
+
 Display
 In the tutorial I learned how to make a tile map to display sprites on a grid. I made a tile set in paint with tiles of 64x64 pixels, divided by a one pixel line. In code I store a pointer to the location of the file in memory, then use math to copy the correct pixel to the screen buffer. By doing this for every cell in the grid I can draw the blocks onto the screen. I can then store tile data in an array, to keep track of what tile should go where.
 I also wanted to support different colors of each tile, so I could make the levels pretty. To avoid making the tilemap huge I dicided to make every tile black or white, so I can test if a pixel should be colored or not. If it should be colored I get the color code from an array and store the index in the tile data array. This way I can assign a color to each tile using a color palette. 
 
-![Screenshot of Tilemap](../Assets/Tilemap.png)
+![Screenshot of Tilemap](../Assets/BreakTheMatrixTilemap.png)
 
 
 Paddle and ball
