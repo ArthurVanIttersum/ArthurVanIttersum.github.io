@@ -4,6 +4,8 @@ This is a version of my portfolio tailored to PlayerUnknownProductions. These ar
 # Dungeon Generator
 Procudural generation. School project.
 
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2Visual.png)
+
 [Read the full devlog →](../Projects/DungeonGenerator1.md)
 
 Procedural Generation using delauney triangulation, voronoi, pathfinding and mesh generation. Passion project using AI.
