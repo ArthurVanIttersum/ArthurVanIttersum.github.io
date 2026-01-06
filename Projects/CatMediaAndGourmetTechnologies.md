@@ -1,4 +1,4 @@
-#Group project: Cat Media and Gourmet Technologies.  
+# Group project: Cat Media and Gourmet Technologies.  
 
 This Is the best game i colaborated on. It's a cooking game where you add ingredients to the dish using a match-3 puzzle mechanic. By swiping you can swap ingredients in a grid to make a line of 3 of the same ingredient. This adds the ingredient to the dish. Keep matching untill the dish is complete. If you accedentally match the wrong ingredient the dish will disapoint the customer, which lowers youor score. If you max out your score you win the game. We decided to theme the game around cats. The costomers are cat versions of our teachers. The title of the Game is CMGT in short, the same as our study.
 
