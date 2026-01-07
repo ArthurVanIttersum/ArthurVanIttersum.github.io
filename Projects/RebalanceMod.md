@@ -66,7 +66,7 @@ Once I had this working, I could also change other settings, such as the price o
 
 The code ended up looking like this:
 
-![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.pngAssets/RebalanceModCode1.png)
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.png)
 
 __Harvesting__
 
@@ -81,8 +81,8 @@ Reflection is a functionality in C# that allows you to inspect and manipulate cl
 I used Harmonyx to replace the ingredient calculation method with my own method, and used reflection to get data from private fields and methods. I ended up mostly copying the original formula, but I took out the supposed bug.
 The code ended up looking like this: 
 
-![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.pngAssets/RebalanceModCode2.png)
-![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.pngAssets/RebalanceModCode3.png)
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode2.png)
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode3.png)
 
 
 __Ingredient Prices__
