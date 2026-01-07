@@ -29,10 +29,16 @@ This Is the best game i colaborated on. It's a cooking game where you add ingred
 
 [Read the full devlog →](../Projects/CatMediaAndGourmetTechnologies.md)
 
+https://degekkelamas.itch.io/catmediaandgourmettechnologies
+
 # Art project 2
 This is a Schoolproject where i made a 3D model of a gym. The objective is to use tilable textures and texture atlases to make kit to make the building. We also got a client brief and a lore guide. I started by searching for reference images and grayboxing.
 
 ![Screenshot of References](../Assets/EnvironmentArtFrontView.png)
 
 # Modding projects
+
+![Screenshot of ModPage](../Assets/RebalanceModNexusPage.png)
+
+https://www.nexusmods.com/potioncraftalchemistsimulator/mods/55
 
