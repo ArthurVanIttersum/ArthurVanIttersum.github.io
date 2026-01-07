@@ -24,7 +24,7 @@ __Bepinex tutorial__
 
 When I got the advice to use BepInEx I looked up a tutorial for how to setup a BepInEx project. I found this tutorial and I followed it. the tutorial has 4 stages. The first stage is installing software, such as .net SDK, Visual studio, BepInEx, and plugin template. The second stage is collecting data for setting up the project correctly, such as the unity version of the game and the dot net version. The third step is setting up the project, so creating the files that I will be working in and setting up basic configurations such as giving the project a name, a unique identifier and a version. The fourth step is setting up fundamental infrastructure, such as loading the PotionCraft.Core.dll file as a library and a logging system.
 
-![Screenshot of RebalanceMod](../Assets/SoberMod.png)
+![Screenshot of RebalanceMod](../Assets/SoberModBep.png)
 
 The code in my project is a class that inherits from UnityPlugin. BepInEx will recognize the Unity plugin and load it into the game when the game starts. The class contains an OnAwake function that gets executed when BepInEx loads the plugin. In this function I used the logging system to write “Hello world” when the plugin is loaded. This was a lengthy and complicated process, but once it was setup I tested it and it worked.
 
