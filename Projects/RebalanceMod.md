@@ -94,4 +94,5 @@ I had already figured out how to use game difficulty settings to change the pric
 This makes the cheapest ingredients a bit more expensive, while keeping medium priced ingredients about the same and making expensive ingredients cheaper. Once I had the formula I used Harmonyx to hook to the GetPrice method which is the method that calculates the price. I replace the method with my prefix which uses my formula before returning the resulting value.
 
 The code ended up looking like this:
+
 ![Screenshot of RebalanceMod](../Assets/RebalanceModCode4.png)
