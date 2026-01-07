@@ -34,7 +34,7 @@ __Directories and libraries__
 
 Once I the mod was working I tried changing the gameplay itself. To do this I need to add the games code to the plugins directory. In other words, the plugin needs to be aware of the games code. To do this I copied the PotionCraft.Scripts.dll file to a folder on my desktop and added a reference to the file location in the project file and included a using directive in the source file. I had already done this with the PotionCraft.Core.dll file. I then tried changing the difficulty settings in the game. I quickly ran into trouble, because the code responsible for loading and saving the difficulty settings data was in Potioncraft.Settings.dll. Once I realized the mistake I added PotionCraft.Settings.dll as a library.
 
-
+![Screenshot of RebalanceMod](../Assets/RebalanceModDirectorys.png)
 
 It took a while for me to realize that this was the problem, because I had never encountered it before and in DotPeek there is no clear distinction between the source files. It took me trying to do the same thing in two different ways and recognizing the same error message to realize that the problem wasn’t with how I was doing it, but what I was doing.
 
@@ -42,7 +42,7 @@ __Harmonyx__
 
 The problem of the difficulty setting not being present in the directory was solved, but I quickly ran into another problem. The difficulty settings are stored in special classes that inherit from ScriptableObject. This means that these classes exist as a file, not as a game object. This means that they are not stored in scenedata, but in a json file somewhere In the games data files. These json files are not loaded when the game starts, but when you start a new run. Changing these values when the plugin is loaded doesn’t work, because the settings have not yet been initialized in the first place. To solve this I had to figure out a way to execute code when the player starts a new game. I did this using Harmonyx.
 
-
+![Screenshot of RebalanceMod](../Assets/RebalanceModHarmonyX.png)
 
 Harmonyx is a library that allows you to hook to specific functions in a program and patch your own code during runtime. To use Harmonyx you need to provide classes that specify which off the games methods you want to change and where it can be found. Harmonyx then looks through all the code in the directory to find the methods you want to change. Harmonyx than creates a hook to that method, meaning that when the method is called, Harmonyx will make a copy of the method, making the changes you specify and then execute that code instead. 
 
@@ -50,17 +50,15 @@ At first I tried hooking to a function I made on my own project, just to test if
 
 I looked through the games code and found the method I wanted to change. In PlayerSettings there is a method called SetInitGold. This method is called when the player starts a new run. This method is called early enough that the most important settings have not been used much and late enough that the settings have been initialized. I added a hook to this function and changed the value of _Gold in a postfix. This worked, but the change is only visible once the value of gold updates again, such as when the player trades with a customer or a merchant.
 
-
-
 __Game difficulty settings__
 
 So far I had only overwritten the value of gold after it is used. What I really wanted to do is change the value of the games difficulty settings. To do this I had to figure out the datastructure. I used the logging system to learn about the values of the settings and how they are stored. The settings are stored using a singleton pattern. GameDificultyStartingGold is a class that contains a static variable of it’s one and only instance. To access that instance you can call the class and then use the .Asset variable. The class inherits from multiple abstract classes, one of which inherits from ScriptableObject. The class contains a dictionary which is defined somewhere else. The dictionary only contains one key. The value of that key is a list of a KeyValuePair, which contains an enum and a float. 
 
-
+![Screenshot of RebalanceMod](../Assets/RebalanceModDifficulty.png)
 
 To log the values I can take the first item in the dictionary, then get the value of it and convert it to an array, then loop through the array and log the KeyValuePairs. To change the value I can again get the first item in the dictionary, get the value of it and index using an enum and change the corresponding float.
 
-
+![Screenshot of RebalanceMod](../Assets/RebalanceModLogs.png)
 
 I really don’t like this datastructure, but I’m sure the developers have a good reason to do it this way. Either way I figured out how to change the values. I changed the Harmonyx method to change the value of GameDificultyStartingGold in a prefix of the SetInitGold method. This way the value of the games settings is changed before it is used. This way, the changed gold value is visible at the start of the game instead of when updated later.
 
@@ -68,7 +66,7 @@ Once I had this working, I could also change other settings, such as the price o
 
 The code ended up looking like this:
 
-
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.pngAssets/RebalanceModCode1.png)
 
 __Harvesting__
 
@@ -83,6 +81,8 @@ Reflection is a functionality in C# that allows you to inspect and manipulate cl
 I used Harmonyx to replace the ingredient calculation method with my own method, and used reflection to get data from private fields and methods. I ended up mostly copying the original formula, but I took out the supposed bug.
 The code ended up looking like this: 
 
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.pngAssets/RebalanceModCode2.png)
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode1.pngAssets/RebalanceModCode3.png)
 
 
 __Ingredient Prices__
@@ -94,3 +94,4 @@ I had already figured out how to use game difficulty settings to change the pric
 This makes the cheapest ingredients a bit more expensive, while keeping medium priced ingredients about the same and making expensive ingredients cheaper. Once I had the formula I used Harmonyx to hook to the GetPrice method which is the method that calculates the price. I replace the method with my prefix which uses my formula before returning the resulting value.
 
 The code ended up looking like this:
+![Screenshot of RebalanceMod](../Assets/RebalanceModCode4.png)
