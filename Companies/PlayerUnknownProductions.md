@@ -37,7 +37,12 @@ This is a Schoolproject where i made a 3D model of a gym. The objective is to us
 ![Screenshot of References](../Assets/EnvironmentArtFrontView.png)
 
 # Modding projects
+This is a mod for the game potioncraft i made as a portfolio piece. The mod rebalances the game to make the game more fun to play. The devs recently released a balance patch that made his mod obsolete. the changes i made in this mod are roughly similar to the changes in the patch.
+![Screenshot of ModPage](../Assets/RebalanceModNexusPage.png)
 
+[Nexus mods page →](../https://www.nexusmods.com/potioncraftalchemistsimulator/mods/55)
+
+This is a mod for the game potioncraft i made to help someone on reddit with alcoholism. The has an oil map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
 ![Screenshot of ModPage](../Assets/RebalanceModNexusPage.png)
 
 [Nexus mods page →](../https://www.nexusmods.com/potioncraftalchemistsimulator/mods/55)
