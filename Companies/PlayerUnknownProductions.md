@@ -36,6 +36,8 @@ This is a Schoolproject where i made a 3D model of a gym. The objective is to us
 
 ![Screenshot of References](../Assets/EnvironmentArtFrontView.png)
 
+[Read the full devlog →](../Projects/CatMediaAndGourmetTechnologies.md)
+
 # Modding projects
 This is a mod for the game potioncraft i made as a portfolio piece. The mod rebalances the game to make the game more fun to play. The devs recently released a balance patch that made his mod obsolete. the changes i made in this mod are roughly similar to the changes in the patch.
 ![Screenshot of ModPage](../Assets/RebalanceModNexusPage.png)
