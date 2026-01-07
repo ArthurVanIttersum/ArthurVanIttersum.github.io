@@ -1,3 +1,5 @@
+# Rebalance Mod
+This is a mod for the game potioncraft i made as a portfolio piece. The mod rebalances the game to make the game more fun to play. The devs recently released a balance patch that made his mod obsolete. the changes i made in this mod are roughly similar to the changes in the patch.
 
 __Install a mod to learn how it works__
 
