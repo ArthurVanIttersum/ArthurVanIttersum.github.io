@@ -24,7 +24,7 @@ __Bepinex tutorial__
 
 When I got the advice to use BepInEx I looked up a tutorial for how to setup a BepInEx project. I found this tutorial and I followed it. the tutorial has 4 stages. The first stage is installing software, such as .net SDK, Visual studio, BepInEx, and plugin template. The second stage is collecting data for setting up the project correctly, such as the unity version of the game and the dot net version. The third step is setting up the project, so creating the files that I will be working in and setting up basic configurations such as giving the project a name, a unique identifier and a version. The fourth step is setting up fundamental infrastructure, such as loading the PotionCraft.Core.dll file as a library and a logging system.
 
-
+![Screenshot of RebalanceMod](../Assets/SoberModLogging.png)
 
 The code in my project is a class that inherits from UnityPlugin. BepInEx will recognize the Unity plugin and load it into the game when the game starts. The class contains an OnAwake function that gets executed when BepInEx loads the plugin. In this function I used the logging system to write “Hello world” when the plugin is loaded. This was a lengthy and complicated process, but once it was setup I tested it and it worked.
 
@@ -89,7 +89,7 @@ __Ingredient Prices__
 
 I had already figured out how to use game difficulty settings to change the price of ingredients, but I wanted more control over the prices. I wanted to change not just the prices overall, but also the difference in prices between ingredients. I wanted cheap ingredients to become a little bit more expensive and expensive ingredients to become a bit cheaper. This way players are incentivized to use expensive, long distance ingredients instead of spamming cheap, short distance ingredients. I used the logging system to get a list of all the prices and put them in an excel sheet to come up with a formula that changes the prices to the values I want. The formula I came up with is raising the price to the power of 0.75, then multiplying by 2.5.
 
-
+![Screenshot of RebalanceMod](../Assets/SoberModGraph1.png)
 
 This makes the cheapest ingredients a bit more expensive, while keeping medium priced ingredients about the same and making expensive ingredients cheaper. Once I had the formula I used Harmonyx to hook to the GetPrice method which is the method that calculates the price. I replace the method with my prefix which uses my formula before returning the resulting value.
 
