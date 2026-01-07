@@ -2,7 +2,7 @@
 This is a version of my portfolio tailored to PlayerUnknownProductions. These are the projects on my portfolio that are relevant to the hiring team of PlayerUnknownProductions.
 
 # Dungeon Generator
-Procudural generation. School project.
+Procudural generation using binary space partitioning. School project.
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Visual.png)
 
