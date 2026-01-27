@@ -38,11 +38,11 @@ This is a mod for the game potioncraft i made as a portfolio piece. The mod reba
 
 [Read the full devlog →](../Projects/RebalanceMod.html)
 
-[Nexus mods page →](../https://www.nexusmods.com/potioncraftalchemistsimulator/mods/55)
+[Nexus mods page →](https://www.nexusmods.com/potioncraftalchemistsimulator/mods/55)
 
 This is a mod for the game potioncraft i made to help someone on reddit with alcoholism. The game has an oil map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
 ![Screenshot of ModPage](../Assets/SoberModPage.png)
 
 [Read the full devlog →](../Projects/SoberMod.html)
 
-[Nexus mods page →](../https://www.nexusmods.com/potioncraftalchemistsimulator/mods/60)
+[Nexus mods page →](https://www.nexusmods.com/potioncraftalchemistsimulator/mods/60)
