@@ -27,7 +27,7 @@ This Is the best game i colaborated on. It's a cooking game where you add ingred
 
 ![Screenshot of Grid](../Assets/CMGTGrid.png)
 
-[Read the full devlog →](../Projects/CatMediaAndGourmetTechnologies.md)
+[Read the full devlog →](../Projects/CatMediaAndGourmetTechnologies.html)
 
 [Itch.io page →](https://degekkelamas.itch.io/catmediaandgourmettechnologies)
 
