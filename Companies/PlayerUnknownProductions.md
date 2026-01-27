@@ -51,4 +51,4 @@ This is a mod for the game potioncraft i made to help someone on reddit with alc
 
 [Read the full devlog →](../Projects/SoberMod.md)
 
-[Nexus mods page →](../https://www.nexusmods.com/potioncraftalchemistsimulator/mods/60)
+[Nexus mods page →](https://www.nexusmods.com/potioncraftalchemistsimulator/mods/60)
