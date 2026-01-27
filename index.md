@@ -16,11 +16,11 @@ with a group of 4(2 angineers and 2 artists) people in 48 hours. It's a cookie c
 
 <a href="https://maxscorpionz.itch.io/churnandearn">Churn and earn</a>
 
-Gamejam parcour game
+## Gamejam parcour game
 
 <a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Rise and fall</a>
 
-group project tower defense game
+## group project tower defense game
 
 <a href="https://chickennuggis.itch.io/last-stand-of-zalakhar">Last Stand of Zalakhar</a>
 
