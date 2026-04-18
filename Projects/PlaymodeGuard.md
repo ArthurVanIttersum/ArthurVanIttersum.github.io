@@ -1,5 +1,5 @@
 # Playmode Guard
-This is a Devtool i made for Untiy as a portfolio piece. Unity sometimes takes time to load playmode. Sometimes while coding I forget to assign one of the variables in the inspector before pressing playmode, causing errors. Because the errors only happen after loading the game I have to turn off the game, solve the problem and load playmode again. this wastes time because the game has to load twice, and takes me out of the flow state. to solve this i made PlaymodeGuard.
+This is a devtool i made for Untiy as a portfolio piece. Unity sometimes takes time to load playmode. Sometimes while coding I forget to assign one of the variables in the inspector before pressing playmode, causing errors. Because the errors only happen after loading the game I have to turn off the game, solve the problem and load playmode again. this wastes time because the game has to load twice, and takes me out of the flow state. to solve this i made PlaymodeGuard.
 
 Playmode Guard is a Unity dev tool that prevents you from starting playmode if you forget to assign a variable in the inspector in one of your scripts. Since the code can't look in your brain to predict your intention, Playmode Guard will make an educated guess based on it's attributes. 
 
