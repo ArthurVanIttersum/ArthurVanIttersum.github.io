@@ -46,3 +46,10 @@ This is a mod for the game potioncraft i made to help someone on reddit with alc
 [Read the full devlog →](../Projects/SoberMod.html)
 
 [Nexus mods page →](https://www.nexusmods.com/potioncraftalchemistsimulator/mods/60)
+
+# Playmode Guard
+This is a devtool for Unity. When the user forgets to assign a variable it prevents starting playmode. This project was designed as a portfolio piece.
+
+[Read the full devlog →](../Projects/PlaymodeGuard.html)
+
+[GitHub page →](https://github.com/ArthurVanIttersum/PlaymodeGuard)
