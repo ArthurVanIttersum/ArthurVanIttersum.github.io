@@ -5,6 +5,8 @@ Playmode Guard is a Unity dev tool that prevents you from starting playmode if y
 
 Playmode Guard asseses for every field in every instance of user made scripts in the current scene that doesn't have a value, whether it must be diffined, might need te be difined or does not need to be diffined. Depending on the settings you choose Playmode Guard will either prevent the user from starting playmode, ask the user if they are sure they want to start playmode, or let the player start playmode and throw an error. Playmode Guard also has a customizable settings window that lets the user choose how Playmode Guard should react to different findings.
 
+[Download the package here →](https://github.com/ArthurVanIttersum/PlaymodeGuard)
+
 # Detect starting playmode
 My first goal was to make a script called "CheckOnPlay" with a method that activates when pressing start. I did this by subscribing to “EditorApplication.playModeStateChanged”. This activates my method “OnPlayModeChanged” in CheckOnPlay when you press play. In CheckOnPlay I added code to turn the game off using “EditorApplication.isPlaying = false”, and added a warning.
 
