@@ -1,13 +1,15 @@
 # Sobermod
-This is a mod for the game potioncraft i made to help someone on reddit with alcoholism. The game has an oil map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
+This is a mod for the game potioncraft i made durring the summer holliday. The mod is meant to help someone on reddit with alcoholism. 
+The game has a wine map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
+
+I already had experience making a mod for this game, so i didn't need to research that. I started by copying the starting code from my previous project, so i had a good starting point. I then looked through the de-compiled code to find the potion bases. The code is spread across a large number of classes that all interact to do different things. I found a method that retrieves the title of the base out of the localization system. I was able to hook to that method with a postfix, filter out the __result equal to "Wine" and replace the __result with "Grape juice". This way, when the player hovers their cursor over the wine icon it says "Grape juice" instead. I found a similar method for the description, which is displayed under the title. i was able to use the same postfix and string comparison solution. When the player clicks on a base they can select which base they want to use. This uses a seperate UI window, which also has it's own button that the player can hover over to make the name of th ebase apear. To solve this i again used the same trick hooking to the right method using a postfix and comparing the string.
+
+I then got in contact with the Redditor who asked for my help. I asked them what they wanted me to replace the text with. I got a reply saying that they want the name "Alkahest", which is a mythological universal solvant. They also wanted me to change sprites to the acid potion sprite. This was a challenge i hadn't done before, but i was up for the challenge.
 
 
+In the same class i found a method that returns a sprite that gets used as the icon for the wine base selection button. I hooked to that method and added a prefix. in the prefix i test if it's the wine base. there is nothing in the method itself that i can use to identify the call, but i can call a method in the class that calls the method. I decided to call the method that returns the element text. since i had overwritten that method returning "Alkahest" in place of "potion_base_wine" i had to test for the string "Alkahest" instead. If this returns true i can return a different sprite and prevent the origional method from calling. To get such a sprite i used a GetByName method in the Potioneffect class. This method returns the exact sprite i need and i return that with the postfix. This makes the sprite from the acid potion effect visible as the sprite used by the potion base selection button.
 
-
-
-
-
-
+I then did the same trick for the tooltip sprite. Here i did run into a problem though, as the tooltip sprite for wine is quite a bit bigger than the acid icon. This is because the wine icon is decorated with leaves around it. The sprite i needed simply didn't exist in the game. So i decided to make it myself. TODO: read sprite changer 2 and explain the algorithm
 
 
 
