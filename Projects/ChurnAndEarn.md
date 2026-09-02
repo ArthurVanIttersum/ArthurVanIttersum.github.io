@@ -1,6 +1,8 @@
 # Churn and earn
 This project is part of a Gamejam i did at school. The theme of the gamejam is growth. We decided to make a game about growing a dairy bussiness. For our gamedesign we took inspiration from the famous game cookieclicker. it's a webgame, where you click on cookies to get cookies, and use those cookies to buy upgrades to get more cookies. Since the game itself i will focuss more on the designing work i did for this project.
 
+![Screenshot of game](../Assets/ChurnAndEarn/layout.png)
+
 In our version the player can click on milk to make milk, and click to sell the milk to make money. The player can then use the money to increase the production of milk, but the player still has to click to sell the milk. When the player has made enough money they can upgrade the bussiness, which allows them to make butter, which is 10x as valuable. This creates a big save up leading to a big pay off. The player can then work up to cheese (100x) and then cake (1000x).
 
 Designing the UI was a bit tricky, because we had a lot to display. We decided to go into paint and make sketches of where the buttons and displays should go. After a bit of re-aranging we got to a UI that we we both happy with. We then implemented it into the game using Unity's UI system.
