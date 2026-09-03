@@ -17,6 +17,9 @@ I then added a for loop that repeatedly calls the split rooms method. If this me
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Layout.png)
 
+The next step is generating the positions of the doors. Rooms next to eachother should be connected with a door. the door can be between 1 and 3 spaces wide. Doors can not go in corner spaces. I started by making another list of RectInts to store the positions of the doors.
+I made a function called MakeDoor. The function requires an area as a RectInt. It makes a door in a random place with a random size and adds it to the doors list. I made another function called GenerateDoorData, which calls this function for every wall section where a door can be placed. To find these wall sections i made a nested loop, looping through every pair of rooms. I then called an algorithm that was provided to us that requires two area and returns the area that overlaps. The result of this method can be fed straight into the method i already had. This succesfully placed doors everywhere.
+
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Doors.png)
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Graph.png)
