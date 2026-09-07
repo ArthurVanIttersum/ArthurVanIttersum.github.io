@@ -5,6 +5,8 @@ This project is part of a Gamejam i did at school. The theme of the gamejam is g
 
 In our version the player can click on milk to make milk, and click to sell the milk to make money. The player can then use the money to increase the production of milk, but the player still has to click to sell the milk. When the player has made enough money they can upgrade the bussiness, which allows them to make butter, which is 10x as valuable. This creates a big save up leading to a big pay off. The player can then work up to cheese (100x) and then cake (1000x).
 
+![Screenshot of game](../Assets/ChurnAndEarn/GameView.png)
+
 Designing the UI was a bit tricky, because we had a lot to display. We decided to go into paint and make sketches of where the buttons and displays should go. After a bit of re-aranging we got to a UI that we we both happy with. We then implemented it into the game using Unity's UI system.
 
 to keep track of the numbers in the game we re-used a script from another course that we were all familiar with. it's a simple scriptable object with an integer and some setter and getter logic. Clicking to make or sell milk was done by connecting the UI button directly to the scriptable object. Making milk over time was done using a simple coroutine with a waitforseconds, where the time between loops approaches 0 the more upgrades you buy. meanwhile the other engineer made a script for buying upgrades, where the cost goes up exponentially.
