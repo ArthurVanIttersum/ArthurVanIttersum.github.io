@@ -17,6 +17,8 @@ The artists made assets, such as the buildings, a cow, treasure, and UI Art. We 
 
 Meanwhile the other engineer added a slider, so the player can sell many items at once. and made a system to spawn and replace scriptable objects based on the amount of treasure and upgrading the bussiness.
 
+![Screenshot of game](../Assets/ChurnAndEarn/Sell1.png)
+
 At this point we had a playtestable version, so i did some playtesting, to adjust the placeholder numbers we were working with up to that point. I realised that the base speed of resource production should be the same for all of them, because it doesn't feel fun to go from a really fast milk production to a really slow butter production. It should go down to a little slow, which can then be upgraded to go really fast again. I also found that the prices of upgrades were going up too fast. i realized that the code was bugged and i left that problem up to the other engeneer who made that script.
 
 I also discovered that the slider for fast selling, which was added as a quality of life feature, broke the game a bit. It was implemented to sell as many products it could, up to the number selected. There was no reason not to leave products unsold, so the player should leave the slider on 1000 at all times to always sell everything they have in one click. This then reduces the player imput, which was a big sellingpoint of the game. Instead of removing the slider i decided to reworked it into a game mechanic.
