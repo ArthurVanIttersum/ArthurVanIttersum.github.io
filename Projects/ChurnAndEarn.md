@@ -19,7 +19,7 @@ Meanwhile the other engineer added a slider, so the player can sell many items a
 
 ![Screenshot of game](../Assets/ChurnAndEarn/Sell1.png)![](../Assets/ChurnAndEarn/Sell5.png)![](../Assets/ChurnAndEarn/Sell20.png)![](../Assets/ChurnAndEarn/Sell100.png)![](../Assets/ChurnAndEarn/Sell1000+.png)
 
-At this point we had a playtestable version, so i did some playtesting, to adjust the placeholder numbers we were working with up to that point. I realised that the base speed of resource production should be the same for all of them, because it doesn't feel fun to go from a really fast milk production to a really slow butter production. It should go down to a little slow, which can then be upgraded to go really fast again. I also found that the prices of upgrades were going up too fast. i realized that the code was bugged and i left that problem up to the other engeneer who made that script.
+At this point we had a playtestable version, so i did some playtesting, to adjust the placeholder numbers we were working with up to that point. I realised that the base speed of resource production should be the same for all of them, because it doesn't feel fun to go from a really fast milk production to a really slow butter production. It should go down to a little slow, which can then be upgraded to go really fast again. I solved this by setting the values in the script all to 1. I also found that the prices of upgrades were going up too fast. i realized that the code was bugged and i left that problem up to the other engeneer who made that script.
 
 ![Screenshot of game](../Assets/ChurnAndEarn/Settings.png)
 
