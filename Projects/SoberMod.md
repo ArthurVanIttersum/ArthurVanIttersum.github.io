@@ -2,7 +2,7 @@
 This is a mod for the game potioncraft i made durring the summer holliday. The mod is meant to help someone on reddit with alcoholism. 
 The game has a wine map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
 
-![Screenshot of Tilemap](../Assets/SoberMod/Page.png)
+![Screenshot of Tilemap](../Assets/SoberMod/Banner.png)
 
 I already had experience making a mod for this game, so i didn't need to research that. I will be using termanology in this devlog without explaining them, so read my devlog about my first modding project first. I Used AI for large parts of this project to speed up development by writing large blocks of code for me and helping me think through problems. I didn't give AI access to potioncraft source code, i analysed that myself using DotPeek.
 
