@@ -2,7 +2,7 @@
 This is a mod for the game potioncraft i made durring the summer holliday. The mod is meant to help someone on reddit with alcoholism. 
 The game has a wine map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
 
-![Screenshot of Tilemap](../Assets/SoberMod/Banner.png)
+![Nexusmods Banner](../Assets/SoberMod/Banner.png)
 
 I already had experience making a mod for this game, so i didn't need to research that. I will be using termanology in this devlog without explaining them, so read my devlog about my first modding project first. I Used AI for large parts of this project to speed up development by writing large blocks of code for me and helping me think through problems. I didn't give AI access to potioncraft source code, i analysed that myself using DotPeek.
 
@@ -10,7 +10,7 @@ I already had experience making a mod for this game, so i didn't need to researc
 
 I started by copying the starting code from my previous project, so i had a good starting point. I then looked through the de-compiled code to find the potion bases. The code is spread across a large number of classes that all interact to do different things. I found a method that retrieves the title of the base out of the localization system. I was able to hook to that method with a postfix, filter out the __result equal to "Wine" and replace the __result with "Grape juice". This way, when the player hovers their cursor over the wine icon it says "Grape juice" instead. I used the same trick for the description which is displayed under the title, but it's hooking to a different method. When the player clicks on a base they can select which base they want to use. This uses a seperate UI window, which also has it's own button that the player can hover over to make the name of the base apear. Here i was also able to use the same trick.
 
-![Screenshot of Tilemap](../Assets/SoberMod/IfAndSwitch.png)
+![Screenshot of code](../Assets/SoberMod/IfAndSwitch2.png)
 
 The localization system of the game uses a dictionary to store the translated text for each language. The first two method that i hooked to use the localization system, and my postfix comes after that. In the third method that i hook to the text is used as a key for the localization system. This means that the localization system is asked to use a key that isn't used in the dictionary, which causes the text to be displayed wrong in some UI elements. To solve that i hooked to a method in LocalizedText, which sets the text in UI elements using the localization dictionary. I added a prefix and filtered the times where the key is equal to "Alkahest" and set the text directly instead of using the localisation dictionary. I have to filter for "Alcahest", not "potion_base_wine", because the third hook already changed the text from "potion_base_wine to "Alcahest".
 
