@@ -29,7 +29,12 @@ Unity lets you make custom editor windows. By making a class inheriting from Edi
 
 In CheckOnPlay i added a simple if statement that tests the value of the boolean in the editor window and ends the method if the value is false. This way CheckOnPlay can be essentially disabled, allowing the user to start the game even if it leads to errors.
 
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard7.png">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard8.png">
+
 I later changed the check mark to a row of buttons, where each button represents a settingsprofile that determains how PlaymodeGuard should respond to an undifined variable of different types. I made four settings profiles that are stored in a scriptable object in the Editor folder. The Editor window gets the data from the scriptable object to display the sprite of each button.
+
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard9.png">
 
 # Collecting scripts in scene
 CheckOnPlay needs to collect all the scripts in the scene and analyse each of the fields in each script. Normally you can use "FindObjectsOfType" to get all scripts in the scene, but this only works during playmode. To find all of the scripts in the scene in editormode you need to get the scene from the scenemanager to get a list of all the root objects and traverse through the tree to find the scripts. I solved the traversal using a recursive function. this recursive function gets the components, gets the children, and activates the recursive function on each of the children. The recursive function ends automatically when all of the gameobjects have been found. As the recursive function goes through the gameobjects it adds all of the scripts to a static list to be analysed later.
