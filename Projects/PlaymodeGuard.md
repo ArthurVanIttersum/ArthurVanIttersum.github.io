@@ -20,6 +20,8 @@ This works, but it creates one problem. OnPlayModeChanged is not the only listen
 
 I solved this problem by subscribing to OnEditorUpdate, instead of OnplayModeStateChanged. This means that the method is getting activated many times per second. I can then test the value of EditorApplication.isPlayingOrWillChangePlaymode and EditorApplication.isPlaying to see if the playbutton has been pressed. The big difference is that this test passes before OnPlayModeStateChanged is published. By exiting playmode early no button has changed it’s color yet, which is much less messy than having to reset the colors afterwards.
 
+![screenshot of the settings window](../Assets/PlaymodeGuard/PlaymodeGuard4.png)![screenshot of the problem](../Assets/PlaymodeGuard/PlaymodeGuard5.png)
+
 # Custom editor window
 Unity lets you make custom editor windows. By making a class inheriting from EditorWindow the class represents a custom editor window. The OnGUI method lets you display things in the EditorWindow, such as text or buttons. I started by adding a check box that lets you turn PlaymodeGuard on or off. I also added a method to make the window by traversing to “window/My Tools/Play Mode Guard”. The value of the checkbox is stored in a private boolean that can be accesed using a public static boolean.
 
