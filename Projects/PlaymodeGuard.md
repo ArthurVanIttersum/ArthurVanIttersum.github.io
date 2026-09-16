@@ -51,3 +51,4 @@ I have a special method to make the final decision on whether playmode should st
 I set up four settings profiles by default ranging from anarchy mode to strict mode. These settings should cover the needs of most people, but users can also add their own settingsprofile if they want.
 
 <img src="../Assets/PlaymodeGuard/PlaymodeGuard18.png">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard19.png">
