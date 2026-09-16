@@ -34,10 +34,12 @@ In CheckOnPlay i added a simple if statement that tests the value of the boolean
 
 I later changed the check mark to a row of buttons, where each button represents a settingsprofile that determains how PlaymodeGuard should respond to an undifined variable of different types. I made four settings profiles that are stored in a scriptable object in the Editor folder. The Editor window gets the data from the scriptable object to display the sprite of each button.
 
-<img src="../Assets/PlaymodeGuard/PlaymodeGuard9.png">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard15.png">
 
 # Collecting scripts in scene
 CheckOnPlay needs to collect all the scripts in the scene and analyse each of the fields in each script. Normally you can use "FindObjectsOfType" to get all scripts in the scene, but this only works during playmode. To find all of the scripts in the scene in editormode you need to get the scene from the scenemanager to get a list of all the root objects and traverse through the tree to find the scripts. I solved the traversal using a recursive function. this recursive function gets the components, gets the children, and activates the recursive function on each of the children. The recursive function ends automatically when all of the gameobjects have been found. As the recursive function goes through the gameobjects it adds all of the scripts to a static list to be analysed later.
+
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard9.png">
 
 # Analysing scripts
 Once all of the scripts have been found, CheckOnPlay can loop through the scripts and analyse all of the fields in each script. Reflection is a tool that lets you analyse code in a compiled state. It lets you acces fields that are otherwise unaccesable, such as private fields. I used reflection to get a list of all the fields in a script. By looping through those fields i can test if they have been a value or not, if they are private or public, if they are serialised or not, if they have attributes or not etc. I made a special Analyse field method to sort through this data and asses if the field needs to be assigned or not. Depending on the data it can either not need to be diffined, absolutely need to be diffined or may need to be diffined. I added static booleans as flags that represent whether any of those outcomes have been found. The settings then determain what consequenses that should have.
