@@ -49,6 +49,6 @@ Once all the scripts have been found, CheckOnPlay can loop through the scripts a
 I have a special method to make the final decision on whether playmode should stop or not and whether a warning should be sent or not. I did this using a simple if statement tree using the data of the selected settings profile in the custom editor window. This gives the user full freedom to make their own settingsprofile or expand the system in whatever way they want. This settingsprofile can be diffined in a scriptable object which contains a list of settingsdata objects that stores data about how the decision should be made.
 
 I set up four settings profiles by default ranging from anarchy mode to strict mode. These settings should cover the needs of most people, but users can also add their own settingsprofile if they want.
-
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard22.png">
 <img src="../Assets/PlaymodeGuard/PlaymodeGuard18.png">
 <img src="../Assets/PlaymodeGuard/PlaymodeGuard19.png">
