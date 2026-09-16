@@ -25,6 +25,8 @@ I solved this problem by subscribing to OnEditorUpdate, instead of OnplayModeSta
 # Custom editor window
 Unity lets you make custom editor windows. By making a class inheriting from EditorWindow the class represents a custom editor window. The OnGUI method lets you display things in the EditorWindow, such as text or buttons. I started by adding a check box that lets you turn PlaymodeGuard on or off. I also added a method to make the window by traversing to “window/My Tools/Play Mode Guard”. The value of the checkbox is stored in a private boolean that can be accesed using a public static boolean.
 
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard4.png">
+
 In CheckOnPlay i added a simple if statement that tests the value of the boolean in the editor window and ends the method if the value is false. This way CheckOnPlay can be essentially disabled, allowing the user to start the game even if it leads to errors.
 
 I later changed the check mark to a row of buttons, where each button represents a settingsprofile that determains how PlaymodeGuard should respond to an undifined variable of different types. I made four settings profiles that are stored in a scriptable object in the Editor folder. The Editor window gets the data from the scriptable object to display the sprite of each button.
