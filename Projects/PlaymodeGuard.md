@@ -12,20 +12,20 @@ I used AI to search the unity documentation for the code i needed for different 
 # Detect starting playmode
 My first goal was to make a script called "CheckOnPlay" with a method that activates when pressing start. I did this by subscribing to “EditorApplication.playModeStateChanged”. This activates my method “OnPlayModeChanged” in CheckOnPlay when you press play. In CheckOnPlay I added code to turn the game off using “EditorApplication.isPlaying = false”, and added a warning.
 
-<img src="../Assets/PlaymodeGuard/PlaymodeGuard1.png" width="600">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard1.png">
 
 This works, but it creates one problem. OnPlayModeChanged is not the only listener listening to OnPlayModeStateChanged, and usually not the first or last. If other listeners activate at the wrong time they might set things to the wrong value and are not reset properly. A good example is in preferences under colors, where the user can set Playmode tint to another color. Many UI elements subscribe to OnPlayModeStateChanged to set their color to that value. If CheckOnPlay turns playmode off at the wrong time these UI elements will not reset their color properly.
 
-<img src="../Assets/PlaymodeGuard/PlaymodeGuard3.png" width="400"> <img src="../Assets/PlaymodeGuard/PlaymodeGuard2.png" width="500">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard3.png"> <img src="../Assets/PlaymodeGuard/PlaymodeGuard2.png">
 
 I solved this problem by subscribing to OnEditorUpdate, instead of OnplayModeStateChanged. This means that the method is getting activated many times per second. I can then test the value of EditorApplication.isPlayingOrWillChangePlaymode and EditorApplication.isPlaying to see if the playbutton has been pressed. The big difference is that this test passes before OnPlayModeStateChanged is published. By exiting playmode early no button has changed it’s color yet, which is much less messy than having to reset the colors afterwards.
 
-<img src="../Assets/PlaymodeGuard/PlaymodeGuard4.png" width="400"> <img src="../Assets/PlaymodeGuard/PlaymodeGuard5.png" width="300">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard4.png"> <img src="../Assets/PlaymodeGuard/PlaymodeGuard5.png">
 
 # Custom editor window
 Unity lets you make custom editor windows. By making a class inheriting from EditorWindow the class represents a custom editor window. The OnGUI method lets you display things in the EditorWindow, such as text or buttons. I started by adding a check box that lets you turn PlaymodeGuard on or off. I also added a method to make the window by traversing to “window/My Tools/Play Mode Guard”. The value of the checkbox is stored in a private boolean that can be accesed using a public static boolean.
 
-<img src="../Assets/PlaymodeGuard/PlaymodeGuard4.png">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard6.png">
 
 In CheckOnPlay i added a simple if statement that tests the value of the boolean in the editor window and ends the method if the value is false. This way CheckOnPlay can be essentially disabled, allowing the user to start the game even if it leads to errors.
 
