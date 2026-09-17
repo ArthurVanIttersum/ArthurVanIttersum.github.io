@@ -20,6 +20,8 @@ I then added randomness. Here i needed to calculate the size of the second room 
 
 The math calculating the rectangles got a bit messy, so i added a method that creates a room from two Vector2Ints. This meant that i only needed to call this method for both new rooms using four corner points in total. Two of those corner points were freebies, because they are already in the origional rectangle. The other two points could be calculated using the split value for X and the top and bottom corner points for Y. This splits the room vertically.
 
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/SplitRoomReworked.png)
+
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Layout.png)
 
 I then copied this method and turned it into a vertical split version. I made the split value random using unity's built in randomization system instead of using half the width or height. Once i had this working i made a method called SplitRoom that calls either method randomly. Starting the list with one room and repeatedly calling Split room generates a bunch of rooms.
