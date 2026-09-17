@@ -19,14 +19,14 @@ Next i added some safety mechanisms, to prevent rooms from getting too small. Th
 # Looping
 I then added a for loop that repeatedly calls the split rooms method. I need it to keep splititng untill all rooms are small enough. I track of the number of completed rooms using the return of the split room method to update an integer. Once the number of completed rooms is larger or equal to the total number of rooms all rooms must be complete, which breaks out of the loop. This is how i generate the room data, which is visualized below.
 
-![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Layout.png)
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Layout.png)
 
 The next step is generating the positions of the doors. Rooms next to eachother should be connected with a door. the door can be between 1 and 3 spaces wide. Doors can not go in corner spaces. I started by making another list of RectInts to store the positions of the doors.
 
 I made a function called MakeDoor. The function requires an area as a RectInt. It makes a door in a random place with a random size and adds it to the doors list. I made another function called GenerateDoorData, which calls this function for every wall section where a door can be placed. To find these wall sections i made a nested loop, looping through every pair of rooms. I then called an algorithm that was provided to us that requires two area and returns the area that overlaps. The result of this method can be fed straight into the MakeDoor method. This succesfully places doors everywhere. In the picture below the doors are displayed in magenta.
 
-![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Doors.png)
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Doors.png)
 
-![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Graph.png)
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Graph.png)
 
-![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Result.png)
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Result.png)
