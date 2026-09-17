@@ -27,6 +27,13 @@ I made a function called MakeDoor. The function requires an area as a RectInt. I
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Doors.png)
 
+# Graph
+Another important part of the exercise is to make a graph out of the dungeon. Every node represents a room, and every edge represents a door. To verify that the graph is made prperly we used breath first search to find all the rooms. In the bootcamp lessons we already got a nice wrapper class that we completed and tested during the lesson. I took that script and put it into my project and connected thing up. I had a list of every room and every door, so i added nodes for every room and an edge for every door. To connect them i used teh intersect method again for all rooms and doors to find out which rooms belong to what doors. In hind sight i could have done this better by generating this data as i was generating the doors themselves. I then ran BFS from the first node to test if every room in the graph is connected.
+
+In the visualization below, the magenta arrows show the room node as their starting point and the door edge as the destination node.
+
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Graph.png)
+
+# Spawning assets
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Result.png)
