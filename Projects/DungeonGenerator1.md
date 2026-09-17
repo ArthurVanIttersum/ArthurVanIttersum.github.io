@@ -44,10 +44,14 @@ I then called an algorithm that was provided to us that requires two area and re
 # Graph
 Another important part of the exercise is to make a graph out of the dungeon. Every node represents a room, and every edge represents a door. To verify that the graph is made prperly we used breath first search to find all the rooms. In the bootcamp lessons we already got a nice wrapper class that we completed and tested during the lesson. I took that script and put it into my project and connected thing up. I had a list of every room and every door, so i added nodes for every room and an edge for every door. To connect them i used teh intersect method again for all rooms and doors to find out which rooms belong to what doors. In hind sight i could have done this better by generating this data as i was generating the doors themselves. I then ran BFS from the first node to test if every room in the graph is connected.
 
-In the visualization below, the magenta arrows show the room node as their starting point and the door edge as the destination node.
+In the visualization below, the magenta arrows show the connections between the room node and the door edge.
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Graph.png)
 
 # Spawning assets
+I made a new script for spawing the assets into the scene. This keeps the code organized better. Istarted by making a function that adds walls around a room. I used two simple for loops, one looping through the width and one looping through the height. Each loop instanciates cube prefabs allong the bottom and the top or the left side and the right side. Together they make the whole perimiter of the room. the problem is in the corners, where both loops place cubes in the same spot. I also needed to create space for the doors. I decided to solve the problem using a hashset. Instead of instanciating the cubes immediately i can also add the position to a hashset. If a coordinate is added twice the hashset will ignore the second instance. I can then loop through the hashset to instaciate all those cubes. To make space for the doors i loop through the doorslist to remove the coordinates of the doors from the hashset, before instanciating the cubes. This succesfuly creates the walls for the dungeon.
+
+# Pathfinding
+Another part of the accercise is pathfinding. Because i was woried about running out of time with environment art i decided to keep it simple, so i used unity's built in pathfinding system.
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Result.png)
