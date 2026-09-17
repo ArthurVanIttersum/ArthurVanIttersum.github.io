@@ -14,6 +14,10 @@ I then made a method called SplitRoomsHorizontal, which takes a given room in th
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/SplitRoomHorizontally.png)
 
+I then added randomness. Here i needed to calculate the size of the second room seperately.
+
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/SplitRoomRandomPoint2.png)
+
 The math calculating the rectangles got a bit messy, so i added a method that creates a room from two Vector2Ints. This meant that i only needed to call this method for both new rooms using four corner points in total. Two of those corner points were freebies, because they are already in the origional rectangle. The other two points could be calculated using the split value for X and the top and bottom corner points for Y. This splits the room vertically.
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Layout.png)
