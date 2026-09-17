@@ -22,8 +22,6 @@ The math calculating the rectangles got a bit messy, so i added a method that cr
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/SplitRoomReworked.png)
 
-![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1/Layout.png)
-
 I then copied this method and turned it into a vertical split version. I made the split value random using unity's built in randomization system instead of using half the width or height. Once i had this working i made a method called SplitRoom that calls either method randomly. Starting the list with one room and repeatedly calling Split room generates a bunch of rooms.
 
 Next i added some safety mechanisms, to prevent rooms from getting too small. This was easy to check with just an if statement. If the room is too small the method returns early returning false, whether if it's not too small the normal logic is followed and the method returns false. In the method that randomizes whether to split horizontally or vertically it get this boolean returned, which is used to activate the other method. This means that of a room is too small to be split horizontally, but can be split vertically the system will first randomize which way to split and if it tries to split horizontally it will try to split vertically instead. If this also fails it means that the room is simply too small to be split at all. In this case the split rooms method returns false. This is usefull later for figuring out when to stop trying to split rooms.
