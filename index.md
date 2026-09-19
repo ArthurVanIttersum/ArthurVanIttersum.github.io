@@ -50,6 +50,8 @@ This is a mod for the game potioncraft i made to help someone on reddit with alc
 ## Playmode Guard
 This is a devtool for Unity. When the user forgets to assign a variable it prevents starting playmode. This project was designed as a portfolio piece.
 
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard5.png">
+
 [Read the full devlog →](../Projects/PlaymodeGuard.html)
 
 [GitHub page →](https://github.com/ArthurVanIttersum/PlaymodeGuard)
