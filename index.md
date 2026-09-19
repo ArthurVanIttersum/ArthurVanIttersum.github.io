@@ -47,6 +47,22 @@ This is a mod for the game potioncraft i made to help someone on reddit with alc
 
 [Nexus mods page →](https://www.nexusmods.com/potioncraftalchemistsimulator/mods/60)
 
+## Dungeon Generator1
+Procudural generation using binary space partitioning. School project.
+
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Visual.png)
+
+[Read the full devlog →](../Projects/DungeonGenerator1.md)
+
+## Dungeon Generator2
+
+Procedural Generation using delauney triangulation, voronoi, pathfinding and mesh generation. Passion project using AI.
+
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2Mesh.png)
+
+[Read the full devlog →](../Projects/DungeonGenerator2.md)
+
+
 ## Playmode Guard
 This is a devtool for Unity. When the user forgets to assign a variable it prevents starting playmode. This project was designed as a portfolio piece.
 
