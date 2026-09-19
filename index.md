@@ -18,14 +18,6 @@ with a group of 4(2 angineers and 2 artists) people in 48 hours. It's a cookie c
 
 <a href="https://maxscorpionz.itch.io/churnandearn">Churn and earn</a>
 
-## Gamejam parcour game
-
-<a href="https://degekkelamas.itch.io/catmediaandgourmettechnologies">Rise and fall</a>
-
-## group project tower defense game
-
-<a href="https://chickennuggis.itch.io/last-stand-of-zalakhar">Last Stand of Zalakhar</a>
-
 # C++ project Escape the matrix
 
 For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. I made a game inspired by breakout, but with weird shapes instead of blocks.
