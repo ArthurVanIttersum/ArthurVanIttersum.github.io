@@ -58,7 +58,7 @@ Procudural generation using binary space partitioning. School project.
 
 Procedural Generation using delauney triangulation, voronoi, pathfinding and mesh generation. Passion project using AI.
 
-![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2Mesh.png)
+![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2/DungeonMaterialFix2.png)
 
 [Read the full devlog →](../Projects/DungeonGenerator2.md)
 
