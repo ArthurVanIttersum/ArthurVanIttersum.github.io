@@ -1,4 +1,4 @@
-# Dungeon generator using Delauney triangulation and Voronoi
+# Dungeon generator using Delauney triangulation Voronoi and pathfinding
 This is a project i did durring the summer holiday. I made a dungeon generator that creates rooms with non-rectangular shapes. This is part of a larger project to make a COD-zombies style game using procedural generation. Since i was doing this project mostly for fun i decided to use AI to write most of my code, but i made sure to understand what each part of the code does. In this project i combined a lot of smaller algorithms to make one larger algorithm that generates the dungeon following certain rules.
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2/DungeonMaterialFix2.png)
