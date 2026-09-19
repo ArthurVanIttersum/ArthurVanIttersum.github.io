@@ -35,4 +35,5 @@ Another problem that came up was that some edges were too short to fit a door. S
 
 ## Mesh generation
 
-Once i had the voronoi graph the way i wanted it, i added a mesh generation system to turn the graph into a mesh. I used a mesh generation script i got from school which turns a list of nodes and faces into a mesh object, which can be sent to mesh renderer and mesh collider components. To generate the nodes and triangles, i made a script that uses the graphgeneration data to loop through the voronoi edges, to create walls. The edges are offset to create a wall with thickness. I cut the wall in three parts in the length, so i can leave an open space in the mesh to place a door.
+Once i had the voronoi graph the way i wanted it, i added a mesh generation system to turn the graph into a mesh. I used a mesh generation script i got from school which turns a list of nodes and faces into a mesh object, which can be sent to mesh renderer and mesh collider components. To generate the nodes and triangles, i made a script that uses the graphgeneration data to loop through the voronoi edges, to create walls. The edges are offset to create a wall with thickness. I cut the wall in three parts in the length, so i can leave an open space in the mesh to place a door. To keep the code readable i made a method that adds a quad to the mesh using four coordinates.
+
