@@ -29,7 +29,6 @@ For the intake project at buas I needed to make a game using a template buas mad
 
 [Read the full devlog →](../Projects/BreakTheMatrix.html)
 
-# Modding projects
 ## Rebalance mod
 This is a mod for the game potioncraft i made as a portfolio piece. The mod rebalances the game to make the game more fun to play. The devs recently released a balance patch that made his mod obsolete. the changes i made in this mod are roughly similar to the changes in the patch.
 
