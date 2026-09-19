@@ -1,6 +1,8 @@
 # My Portfolio
 Welcome to my projects!
 
+## Cat Media and Gourmet Technologies
+
 This Is the best game i colaborated on. It's a cooking game where you add ingredients to the dish using a match-3 puzzle mechanic. As a team we have received a lot of positive feedback. I made the swiping detection and 3 in a row detection and resolution algorithm.
 
 ![Screenshot of Grid](../Assets/CMGTGrid.png)
