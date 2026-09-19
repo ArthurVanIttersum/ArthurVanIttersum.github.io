@@ -18,7 +18,7 @@ with a group of 4(2 angineers and 2 artists) people in 48 hours. It's a cookie c
 
 <a href="https://maxscorpionz.itch.io/churnandearn">Churn and earn</a>
 
-# C++ project Escape the matrix
+## C++ project Escape the matrix
 
 For the intake project at buas I needed to make a game using a template buas made available in C++. The idea is to make a game in C++ without using a conventional game engine. I made a game inspired by breakout, but with weird shapes instead of blocks.
 
@@ -27,6 +27,7 @@ For the intake project at buas I needed to make a game using a template buas mad
 [Read the full devlog →](../Projects/BreakTheMatrix.html)
 
 # Modding projects
+## Rebalance mod
 This is a mod for the game potioncraft i made as a portfolio piece. The mod rebalances the game to make the game more fun to play. The devs recently released a balance patch that made his mod obsolete. the changes i made in this mod are roughly similar to the changes in the patch.
 ![Screenshot of ModPage](../Assets/RebalanceModNexusPage.png)
 
@@ -34,6 +35,7 @@ This is a mod for the game potioncraft i made as a portfolio piece. The mod reba
 
 [Nexus mods page →](https://www.nexusmods.com/potioncraftalchemistsimulator/mods/55)
 
+## Sober mod
 This is a mod for the game potioncraft i made to help someone on reddit with alcoholism. The game has an oil map, which reminded the user of alcohol every time they see it in the game. They asked for a mod that replaces all references to the wine map with something else. That is what i made.
 ![Screenshot of ModPage](../Assets/SoberMod/Page.png)
 
