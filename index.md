@@ -14,6 +14,9 @@ This Is the best game i colaborated on. It's a cooking game where you add ingred
 ## Churn and Earn
 I colaborated on this gamejam game. It's a cookie clicker style game, where you click buttons to buy and sell products.
 with a group of 4(2 angineers and 2 artists) people in 48 hours. It's a cookie clicker style game, with buying and selling products. We colaborated on the concept and me and the other engineer did desing on the side. For this project took the lead in designing the UI and set it up in the engine. i also implemented basic coin and resource counters and resource production, aswell as a level up system. I did playtesting, balance testing and fine tuning. While playtesting the game i realized i could make the quantity slider a gameplay mechanic in itself, by making the sell button only work if you have enough products to sell them all at once. I also chose to speed up the resource production for unlocked products as it felt more rewarding.
+
+![Screenshot of game](../Assets/ChurnAndEarn/GameView.png)
+
 [Read the full devlog →](../Projects/ChurnAndEarn.html)
 
 <a href="https://maxscorpionz.itch.io/churnandearn">Churn and earn</a>
@@ -29,6 +32,7 @@ For the intake project at buas I needed to make a game using a template buas mad
 # Modding projects
 ## Rebalance mod
 This is a mod for the game potioncraft i made as a portfolio piece. The mod rebalances the game to make the game more fun to play. The devs recently released a balance patch that made his mod obsolete. the changes i made in this mod are roughly similar to the changes in the patch.
+
 ![Screenshot of ModPage](../Assets/RebalanceModNexusPage.png)
 
 [Read the full devlog →](../Projects/RebalanceMod.html)
