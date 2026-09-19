@@ -3,7 +3,7 @@ This is a project i did durring the summer holiday. I made a dungeon generator t
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2Mesh.png)
 
-## making a graph
+## Making a graph
 I started by picking a bunch of random points. I then connected these points to make a graph. Each node represents a room and each edge between two nodes represents a door that connects the rooms. The weights of the edges represents the cost to open the door. The weights are randomly generated out of an array of round numbers before the graph is tested. The idea was to then run a pathfinding algorithm on that graph, to test if it fulfills the given criteria.
 
 If the test returns true the graph is used to generate the dungeon. If the test returns false, the waits of the graph are regenerated and the graph is tested agian. If after 50 tries no solution has been found the structure of the graph is assumed to be bad, and a new graph is generated from scratch.
@@ -12,7 +12,7 @@ To generate the graph my first attempt was to connect points that are close enou
 
 My next idea was to use a triangulation algorithm for connecting the nodes instead of the naive method from before. I first tried the ear removal algorithm, because i had used it for shader programming class. This resulted in better graphs, but it was generating a lot of irregular triangles. Through some research on different triangulation algorithms i found the delauney triangulation algorithm which did exactly what i wanted, and can also be used to make a voronoi graph, which would be usefull later for making the walls of the rooms.
 
-## weights and testing
+## Weights and testing
 In Zombies there is usually a room where the player starts and a room with a power switch, which the player must reach to unlock important powerups. There are usually multiple paths from the starting room to the powerroom, where the cost of all the doors adds up to the same number, and there cannot be a cheaper path. I wanted this mehanic in my dungeon generator too. To do this in my graph i choose a starting node and an end node that are far away from eachother. I then run The pathfinding algorithm, which needs to find the N shortest paths which need to be at least L long. If the algorithm finds those paths the graph is valid.
 
 At first, I used Yen’s algorithm to compute the K shortest simple paths. While Yen’s algorithm works well in many scenarios, it didn't produce consistent results in this scenario. Yen’s method is designed to find the shortest path, then the next shortest, and so on, until K paths have been found. This is ideal when path lengths differ, but it doesn’t handle equal‑cost shortest paths in a controlled way. The core issue is that Yen’s algorithm repeatedly calls Dijkstra’s algorithm. Standard Dijkstra keeps only one best distance path per node. If two different paths reach the same node with exactly the same total cost, Dijkstra keeps whichever one it encounters first and discards the other. Because Yen’s algorithm depends on Dijkstra internally, this behavior of equal‑cost shortest paths being lost carries over. In some special graph structures Yen may still return multiple equal‑cost paths, but this is incidental and not guaranteed. For my use case where different cost paths are irrelevant, this inconsistency lead to a high false-negative rate.
@@ -21,7 +21,7 @@ To solve this, I designed an algorithm designed specifically for equal‑cost sh
 
 ![Screenshot of GeneratedDelauneyGraph](../Assets/DungeonGenerator2DelauneyGraph.png)
 
-## cleaning up the graph
+## Cleaning up the graph
 
 The delauney algorithm generates a set of triangles by generating a bunch of circles that lie on the nodes. Only the circles that don't contain a node inside the circle are kept. If you connect the nodes of those circles you end up with a triangulation of the points. Now, if you connect the centerpoints of the circles with eachother only if the triangles border each other, you end up with a voronoi graph, which is exactly what i want to generate the walls of the dungeon.
 
@@ -33,12 +33,6 @@ Another problem that came up was that some edges were too short to fit a door. S
 
 ![Screenshot of GeneratedVoronoiGraph](../Assets/DungeonGenerator2Graph.png)
 
-Once i had the voronoi graph the way i wanted i added a mesh generation system to turn the graph into a mesh. I used a mesh generation script i got from school which turns a list of nodes and faces into a mesh object, which can be sent to meshrenderer and mesh collider components. to generate the nodes and triangles i made a script that uses the graphgeneration data to loop through the voronoi edges, to create walls. the edges are offset to create a wall with thickness and cut in three parts to leave an open space for a door.
+## Mesh generation
 
-
-
-
-
-
-
-
+Once i had the voronoi graph the way i wanted it, i added a mesh generation system to turn the graph into a mesh. I used a mesh generation script i got from school which turns a list of nodes and faces into a mesh object, which can be sent to mesh renderer and mesh collider components. To generate the nodes and triangles, i made a script that uses the graphgeneration data to loop through the voronoi edges, to create walls. The edges are offset to create a wall with thickness. I cut the wall in three parts in the length, so i can leave an open space in the mesh to place a door.
