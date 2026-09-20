@@ -52,7 +52,7 @@ Procudural generation using binary space partitioning. School project.
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator1Visual.png)
 
-[Read the full devlog →](../Projects/DungeonGenerator1.md)
+[Read the full devlog →](../Projects/DungeonGenerator1.html)
 
 ## Dungeon Generator2
 
@@ -60,14 +60,14 @@ Procedural Generation using delauney triangulation, voronoi, pathfinding and mes
 
 ![Screenshot of GeneratedDungeon](../Assets/DungeonGenerator2/DungeonMaterialFix2.png)
 
-[Read the full devlog →](../Projects/DungeonGenerator2.md)
+[Read the full devlog →](../Projects/DungeonGenerator2.html)
 
 # Environment Art
 This is a school project where i made a 3D model of a gym. The objective is to use tilable textures and texture atlases to make modular kit to make the building.
 
 ![Screenshot of References](../Assets/EnvironmentArt/FrontView.png)
 
-[Read the full devlog →](../Projects/EnvironmentArt.md)
+[Read the full devlog →](../Projects/EnvironmentArt.html)
 
 ## Playmode Guard
 This is a devtool for Unity. When the user forgets to assign a variable it prevents starting playmode. This project was designed as a portfolio piece.
