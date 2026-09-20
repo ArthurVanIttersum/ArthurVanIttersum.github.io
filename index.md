@@ -72,7 +72,7 @@ This is a school project where i made a 3D model of a gym. The objective is to u
 ## Playmode Guard
 This is a devtool for Unity. When the user forgets to assign a variable it prevents starting playmode. This project was designed as a portfolio piece.
 
-<img src="../Assets/PlaymodeGuard/PlaymodeGuard5.png">
+<img src="../Assets/PlaymodeGuard/PlaymodeGuard5.png", width =400>
 
 [Read the full devlog →](../Projects/PlaymodeGuard.html)
 
