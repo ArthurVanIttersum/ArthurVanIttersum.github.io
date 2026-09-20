@@ -62,6 +62,12 @@ Procedural Generation using delauney triangulation, voronoi, pathfinding and mes
 
 [Read the full devlog →](../Projects/DungeonGenerator2.md)
 
+# Environment Art
+This is a school project where i made a 3D model of a gym. The objective is to use tilable textures and texture atlases to make modular kit to make the building.
+
+![Screenshot of References](../Assets/EnvironmentArtFrontView.png)
+
+[Read the full devlog →](../Projects/EnvironmentArt.md)
 
 ## Playmode Guard
 This is a devtool for Unity. When the user forgets to assign a variable it prevents starting playmode. This project was designed as a portfolio piece.
