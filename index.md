@@ -65,7 +65,7 @@ Procedural Generation using delauney triangulation, voronoi, pathfinding and mes
 # Environment Art
 This is a school project where i made a 3D model of a gym. The objective is to use tilable textures and texture atlases to make modular kit to make the building.
 
-![Screenshot of References](../Assets/EnvironmentArtFrontView.png)
+![Screenshot of References](../Assets/EnvironmentArt/FrontView.png)
 
 [Read the full devlog →](../Projects/EnvironmentArt.md)
 
