@@ -52,3 +52,6 @@ I set up four settings profiles by default ranging from anarchy mode to strict m
 <img src="../Assets/PlaymodeGuard/PlaymodeGuard22.png">
 <img src="../Assets/PlaymodeGuard/PlaymodeGuard18.png">
 <img src="../Assets/PlaymodeGuard/PlaymodeGuard19.png">
+
+# warning
+When playmode is prevented they know that something has not been defined, but they don’t know what. The warning I had explained that something was undefined, but not what. I decided to change that by adding the name of the game object, the name of the script and the name of the field into the warning, such that the player can find the problem more easily. I then also set the game object as the selected object and made the unity editor window the active window. I even activated the a ping effect that makes the game object flash in the hierarchy and the project folder. I also tried adding a flash effect to the field itself, but unity didn’t support that functionality. I considered adding a custom editor window to replace the normal editor window, so I could add that functionality, but I decided that it was outside the scope of the project.
