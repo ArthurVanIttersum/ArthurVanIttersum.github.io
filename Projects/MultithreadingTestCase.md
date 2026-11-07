@@ -56,7 +56,7 @@ To spawn objects using procedural generation I added a method that spawns the ob
 
 I then copied over the first major method of the generation algorithm. This method picks a bunch of positions randomly out of all the options and spawns objects there. The rules of this algorithm are interesting and complex, but not worth going into in depth. Once I finally had this working I was able to spawn my first chunk using multithreading.
 
-[picture here]
+![Screenshot of game](../Assets/multithreadingTestCase/firstChunk.png)
 
 ## Generate multiple chunks using multithreading
 That’s right my first chunk. Remember the stopgap from earlier? It’s time to fix that now.
