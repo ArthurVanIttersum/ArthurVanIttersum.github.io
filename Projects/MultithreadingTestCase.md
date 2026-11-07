@@ -36,7 +36,7 @@ I started by copying example code into my project. I have a script with a schedu
 
 First the scheduling class makes the job struct and the array. The scheduling class shares the array with the job struct and schedules the job. This activates the Execute() method on a different thread, which writes to the array. The scheduling class then tests if the code is done and activates the Complete() method. This makes the array usable to the scheduling class and ends the job. The array still exists in the scheduling class, which can use the data and then dispose it to free the memory. This is how the example code works.
 
-[picture here]
+![Screenshot of game](../Assets/multithreadingTestCase/sourceCode.png)
 
 ## Connect multithreading to terrain generation systems
 In my procedural generation code I have a script that works at a chunk level and a script that works at the level of the whole terrain. The class that works at the terrain level calls an event that activates a method in the chunk level class called GenerateTerrain(). This method activates the chunk generation algorithm. Once this algorithm is complete and all objects in that chunk have been spawned the method ends and the terrain level class activates the event again for the next chunk. This logic happens inside a coroutine, with a yield return that gets activated when too much time has passed. I implemented this logic so that the lag caused by the algorithm gets spread across multiple frames. This is the part I wanted to replace with the double threaded system, but that is not going to work. instead I went down to the chunk level class and put that on a separate thread.
