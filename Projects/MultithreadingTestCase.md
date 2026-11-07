@@ -93,5 +93,5 @@ Here is the multithreaded version:
 <img src="/Assets/multithreadingTestCase/VideoProject5.gif" alt="multithreaded algorithm" width="1200">
 
 
-The terrain generates faster, while the FPS goes from around 15 FPS to around 55 FPS. This performance boost comes from moving the calculation to worker threads, leaving the main thread with only object spawning and some job scheduling time. The FPS sits around the same number as the old system using the higher hex scale value. This makes sense, as that version also spent most of it’s time instantiating objects. That is ultimately the bottleneck which multithreading can’t get around.
+The terrain generates faster with better FPS. While not recording the FPS goes from around 15 FPS to around 55 FPS. This performance boost comes from moving the calculation to worker threads, leaving the main thread with only object spawning and some job scheduling time. The FPS sits around the same number as the old system using the higher hex scale value. This makes sense, as that version also spent most of it’s time instantiating objects. That is ultimately the bottleneck which multithreading can’t get around.
 
