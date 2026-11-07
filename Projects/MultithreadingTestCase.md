@@ -45,7 +45,7 @@ I added the GenerateTerrain() method to the scheduling class and connected the e
 
 Here is the result:
 
-[picture here]
+![Screenshot of game](../Assets/multithreadingTestCase/result.png)
 
 This showed me that chunks were getting scheduled, but not all of them. This is because I added a stopgap meant to prevent the result array from getting overwritten during generation. When the GenerateTerrain() method gets called it checks if there is a job running or not. The numbers are all multiples of 121. This is because the whole terrain is 121 chunks. That is 11x11 chunks. There are 3 frames between the first generation and the first reset. Then another 2 frames per reset every print.
 
