@@ -82,9 +82,12 @@ Show screenshot of the resetting spike
 You would think the project would be done here, but no. this is only the obstacle generation part of the algorithm. I still needed to add the pathfinding algorithm to test if there is a valid path from the start of the chunk to the end of the chunk. If the pathfinding fails the generation needs to be redone creating a loop that ends when a viable path is reached. This took a bit of time and tinkering, but I got it to work. I then also added the coin generation and grass generation code. These objects aren’t obstacles, so they are done after the pathfinding algorithm. This took a lot of time without a big difference in result, but I can’t fairly compare the old algorithm with the new one if both algorithms don’t do the same thing. That would be comparing apples to oranges or pears. There’s not much more to say other than I got a lot of practice in.
 
 ## Results
-This is the best part. Here are some screenshots of the profiler and some gifs that show the algorithm in action.
+This is the best part. Here are some gifs that show the algorithm in action. I used OBS to record this video instead of snipping tool to mitigate the influence on performance. Still, the performance improvement is more extreme when not recording.
 
+Here is the singlethreaded version:
 <img src="/Assets/multithreadingTestCase/VideoProject5(1).gif" alt="singlethreaded algorithm">
+
+Here is the multithreaded version:
 <img src="/Assets/multithreadingTestCase/VideoProject5.gif" alt="multithreaded algorithm">
 
 
