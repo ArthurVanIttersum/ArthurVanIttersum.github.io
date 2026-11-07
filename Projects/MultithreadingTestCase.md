@@ -15,6 +15,7 @@ After reading the unity documentation I realized I had a few problems that force
 
 In the image below you can see the profiler while generating terrain. The big blue boxes represent the  whole algorithm as it runs that frame. The green boxes are objects being instantiated, while the red boxes are data being deleted. The small blue boxes are debug prints which happen between chunks getting generated. As you can see there is very little space between chunks getting generated. This means that multithreading won’t help optimizing this algorithm.
 
+![Screenshot of game](../Assets/multithreadingTestCase/profiler1.png)
 [picture here]
 
 I realized that the time complexity of my generation logic scales with the number of possible placements likely with some exponent, while object spawning scales with the number of actual placements, which is limited by the settings. By increasing the size of the chunks I could slow down the main algorithm enough that a significant amount of time would pass between chunks getting generated. This would make the benefit of multithreading measurable.
