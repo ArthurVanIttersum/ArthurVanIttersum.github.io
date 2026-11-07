@@ -63,7 +63,7 @@ That’s right my first chunk. Remember the stopgap from earlier? It’s time to
 
 I made a new script with a GenerationRequest class. This class keeps track of everything that is relevant to a specific chunk getting generated. It stores the game object that the instantiated objects are the child of, the job struct, the result array and other native data structures. In the GenerateChunk method I can create the GenerationRequest and put it in a list. Then in Update I can loop through the list and check which jobs are done. I can then complete the job, activate the object spawning method using that result array and dispose the data. This structure keeps the chunk generation data separate and organized. This then allows me to generate all the chunks properly.
 
-[picture here]
+<img src="/Assets/multithreadingTestCase/VideoProject4.gif" alt="generating multiple chunks" width="1200">
 
 ## Optimizing multithreading bottlenecks
 Now that all the chunks are getting generated a lot of new performance issues are revealed. Every time that the generation resets there is a major lag spike that lasts a few frames, but takes up a few seconds. Then after this lag spike all the chunks are getting generated very quickly at which point the system resets again. This means that the code is constantly resetting leading to permanent lagspikes. The first thing I did is slow down the request completion loop. I added a return to the loop to make the loop only generate one chunk per frame. This slowed down the generation enough to see that the lag spike happens at the beginning.
