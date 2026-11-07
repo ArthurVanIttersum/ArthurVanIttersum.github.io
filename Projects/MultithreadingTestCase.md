@@ -86,7 +86,7 @@ This is the best part. Here are some gifs that show the algorithm in action. I u
 
 Here is the singlethreaded version:
 
-<img src="/Assets/multithreadingTestCase/VideoProject5(1).gif" alt="singlethreaded algorithm" stylel="width: 100%, max-width: 1200px;">
+<img src="/Assets/multithreadingTestCase/VideoProject5(1).gif" alt="singlethreaded algorithm" width: "100%">
 
 Here is the multithreaded version:
 
