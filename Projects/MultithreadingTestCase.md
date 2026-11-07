@@ -23,7 +23,7 @@ I ended up deciding to keep the chunk size the same while lowering the HexScale 
 
 In the picture below you can see the profiler while generating terrain with HexScale at 1x1 instead of 5x5. This means that there are 25 times as many possible spawning spaces and 5x as many pathfinding checks that run about 5 times as long. This means that the logic runs a lot slower, without effecting the time it takes to spawn objects. The blue box is the whole algorithm as it runs that frame. The backlog of chunks to be generated remains full between frames, so the coroutine never restarts, which is why there is only one big blue box instead of the two in the previous picture. The green spaces are objects being instantiated, while the red spaces are data being deleted. The blue boxes are debug prints, which happen between chunks getting generated. As you can see there is a lot of space between chunks getting generated. This space in between can be optimized with multithreading.
 
-[picture here]
+![Screenshot of game](../Assets/multithreadingTestCase/profiler2.png)
 
 To be clear, this is the same algorithm running the same code. The only change is the setting for how the chunks are laid out. The settings we used for the group project were optimized for looks and gameplay purposes. The algorithm I made at the time worked great for the requirements we had at the time. It’s only when you change the requirements, pushing the system to it’s limits that you can see the system slow down.
 
