@@ -85,9 +85,11 @@ You would think the project would be done here, but no. this is only the obstacl
 This is the best part. Here are some gifs that show the algorithm in action. I used OBS to record this video instead of snipping tool to mitigate the influence on performance. Still, the performance improvement is more extreme when not recording.
 
 Here is the singlethreaded version:
-<img src="/Assets/multithreadingTestCase/VideoProject5(1).gif" alt="singlethreaded algorithm">
+
+<img src="/Assets/multithreadingTestCase/VideoProject5(1).gif" alt="singlethreaded algorithm" width="800">
 
 Here is the multithreaded version:
+
 <img src="/Assets/multithreadingTestCase/VideoProject5.gif" alt="multithreaded algorithm">
 
 
